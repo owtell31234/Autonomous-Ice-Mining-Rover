@@ -12,3 +12,5 @@ class RoverState(Enum):
     RESET_SYSTEM = 8
     COMPLETE = 9
     ERROR = 10
+
+print(IDLE)
