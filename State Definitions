@@ -6,11 +6,17 @@ class RoverState(Enum):
     POSITION_ROVER = 2
     LOWER_BUCKET = 3
     COLLECT_MATERIAL = 4
-    RAISE_BUCKET = 5
-    RETURN_HOMEBASE = 6
-    DUMP_MATERIAL = 7
-    RESET_SYSTEM = 8
-    COMPLETE = 9
-    ERROR = 10
+    CLOSE_DOOR = 5
+    RAISE_BUCKET = 6
+    RETURN_HOMEBASE = 7
+    DUMP_MATERIAL = 8
+    RESET_SYSTEM = 9
+    COMPLETE = 10
+    ERROR = 11
 
-print(IDLE)
+class Rover:
+    def __init__(self):
+        self.state = RoverState.IDLE
+        self.material_collected = False
+        self.trap_door_closed = False
+        self.bucket_lowered = False
