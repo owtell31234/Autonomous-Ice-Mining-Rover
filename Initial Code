@@ -1,0 +1,14 @@
+from enum import Enum
+
+class RoverState(Enum):
+    IDLE = 0
+    NAVIGATE_TO_SITE = 1
+    POSITION_ROVER = 2
+    LOWER_BUCKET = 3
+    COLLECT_MATERIAL = 4
+    RAISE_BUCKET = 5
+    RETURN_HOMEBASE = 6
+    DUMP_MATERIAL = 7
+    RESET_SYSTEM = 8
+    COMPLETE = 9
+    ERROR = 10
